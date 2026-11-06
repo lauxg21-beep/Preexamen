@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>KUMON </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap y estilos basados en tu ejemplo TUVCH -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+    </head>
+    <body>
+        
+        <!-- HEADER -->
+        <header>
+            <div id="header" style="background: #0f0c29; padding: 15px 0; color: white;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h3>Centro Educación Continua KUMON</h3>
+                        </div>
+                        <div class="col-md-3 text-right">
+                            <a href="catalogoTips.jsp" class="btn btn-outline-light" style="color: white; border: 1px solid white;">Ver Catálogo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- FORMULARIO DE CAPTURA (RF-001) -->
+        <div class="section" style="padding: 40px 0;">
+            <div class="container">
+                <form method="post" action="guardarTip.jsp" autocomplete="off">
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4" style="background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1);">
+                            <div class="section-title text-center">
+                                <h3 class="title" style="color: #302b63;">Guardar Tip</h3>
+                                <p>Inteligencia Artificial Generativa</p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Nombre del Tip</label>
+                                <input class="form-control" type="text" placeholder="Ej. Prompts efectivos" required name="nombre">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Fecha de Publicación</label>
+                                <input class="form-control" type="date" required name="fecha">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Descripción del Tip</label>
+                                <textarea class="form-control" rows="4" placeholder="Aquí escribe un tip..." required name="descripcion"></textarea>
+                            </div>
+                           
+                            <center>
+                                <input type="submit" class="btn btn-primary btn-block" name="btnGuardar" value="Guardar Tip" style="background: #302b63; border: none; padding: 10px;">
+                            </center>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Script de Bootstrap -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
